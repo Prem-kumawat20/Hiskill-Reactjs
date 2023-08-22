@@ -1,0 +1,13 @@
+.body {
+  background-color: aquamarine;
+}
+.sidebar{
+    flex: 0 0 400px;
+    background:#f0f0f0;
+  }
+  .content{
+    flex: 1;
+    padding-left: 250px;
+    padding-right: 30px;
+    background-color: white;
+  }

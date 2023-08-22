@@ -1,0 +1,153 @@
+.hv-1hnerqm {
+  visibility: hidden;
+}
+.hv-uikit-css-1o4qkkz-StyledChildren
+{
+  padding-bottom: 10px;
+} */
+
+
+.table-pagination-pages {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+position: absolute;
+top:520px;
+left:480px;
+}
+
+.table-pagination-pages button {
+margin: 5px;
+padding: 5px 10px;
+
+border: none;
+cursor: pointer;
+}
+
+.table-pagination-pages button.active {
+background-color: darkorange;
+}
+
+.table-pagination-page-numbers {
+display: flex;
+align-items: center;
+margin-left: 10px;
+}
+.table-pagination-page-numbers span {
+padding: 10px;
+display: flex;
+align-items: center;
+}
+.table-pagination-page-numbers span:nth-child(1) {
+border: 1px solid black;
+border-radius: 3px;
+padding-left:15px;
+padding-right: 15px;
+}
+
+.lt {
+margin-right: 10px;
+position: relative;
+display: inline-flex;
+align-items: center;
+background-color: transparent;
+font-size: 24px;
+padding: 5px 10px;
+}
+
+.first-page-btn{
+font-size: 24px;
+padding: 5px 10px;
+background-color: transparent;
+align-items: center;
+display: inline-flex;
+}
+
+.gt {
+margin-left: 10px;
+position: relative;
+display: inline-flex;
+align-items: center;
+background-color: transparent;
+font-size: 24px;
+padding: 5px 10px;
+}
+.last-page-btn{
+display: inline-flex;
+align-items: center;
+background-color: transparent;
+font-size: 24px;
+padding: 5px 10px;
+}
+.last-page-btn:hover::before{
+content: "Last Page";
+position: absolute;
+top: -40px;
+left: 272px;
+background-color: rgb(133, 130, 130);
+color: white;
+border-radius: 3px;
+white-space: nowrap;
+padding: 10px;
+font-size: small;
+}
+.gt:hover::before {
+content: "Next Page";
+position: absolute;
+top: -45px;
+left: -12px;
+background-color: rgb(133, 130, 130);
+color: white;
+border-radius: 3px;
+white-space: nowrap;
+padding: 10px;
+font-size: small;
+}
+.lt:hover::before {
+content: "Prev Page";
+position: absolute;
+top: -45px;
+left: -10px;
+background-color: rgb(133, 130, 130);
+color: white;
+border-radius: 3px;
+white-space: nowrap;
+padding: 10px;
+font-size: small;
+}
+.first-page-btn:hover::before{
+content: "First Page";
+position: absolute;
+top: -40px;
+left: -8px;
+background-color: rgb(133, 130, 130);
+color: white;
+border-radius: 3px;
+white-space: nowrap;
+padding: 10px;
+font-size: small;
+}
+.lt:hover,
+.gt:hover,
+.first-page-btn:hover,
+.last-page-btn:hover
+{
+background-color: rgb(196, 207, 227);
+border-radius: 3px;
+}
+/* .gt:hover{
+background-color: rgb(196, 207, 227);
+} */
+.lt[disabled]:hover,
+.gt[disabled]:hover,
+.first-page-btn[disabled]:hover,
+.last-page-btn[disabled]:hover
+{
+background-color: transparent; /* Remove background color when the button is disabled */
+cursor: not-allowed; /* Show "not-allowed" cursor when the button is disabled */
+}
+
+.current{
+margin-right: 10px;
+}
